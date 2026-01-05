@@ -55,7 +55,7 @@ class StudentServiceTest {
 
     @Test
     void testGetAllStudents_EmptyList() {
-        when(studentRepository.findAll()).thenReturn(Arrays.asList());
+        when(studentRepository.findAll()).thenReturn(List.of());
 
         List<StudentDto> result = studentService.getAllStudents();
 
