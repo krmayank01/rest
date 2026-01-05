@@ -9,7 +9,7 @@ A complete CRUD REST API for managing students with input validation and compreh
 - **Exception Handling**: Global exception handler for consistent error responses
 - **H2 In-Memory Database**: Easy testing and development
 - **Unit Tests**: Comprehensive test coverage for controllers and services
-- **API Documentation**: Well-documented REST endpoints
+- **API Documentation**: Well-documented REST endpoint
 
 ## Technologies Used
 
