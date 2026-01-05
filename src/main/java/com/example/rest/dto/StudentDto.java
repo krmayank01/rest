@@ -20,6 +20,7 @@ public class StudentDto {
     @NotBlank(message = "Email is required")
     private String email;
 
+    @NotNull(message = "Age is required")
     @Min(value = 1, message = "Age must be at least 1")
     @Max(value = 150, message = "Age must be less than 150")
     private Integer age;

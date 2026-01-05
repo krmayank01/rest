@@ -55,7 +55,7 @@ class TeacherServiceTest {
 
     @Test
     void testGetAllTeachers_EmptyList() {
-        when(teacherRepository.findAll()).thenReturn(Arrays.asList());
+        when(teacherRepository.findAll()).thenReturn(List.of());
 
         List<TeacherDto> result = teacherService.getAllTeachers();
 

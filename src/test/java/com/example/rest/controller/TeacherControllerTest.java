@@ -61,7 +61,7 @@ class TeacherControllerTest {
 
     @Test
     void testGetAllTeachers_EmptyList() throws Exception {
-        when(teacherService.getAllTeachers()).thenReturn(Arrays.asList());
+        when(teacherService.getAllTeachers()).thenReturn(List.of());
 
         mockMvc.perform(get("/api/teachers")
                         .contentType(MediaType.APPLICATION_JSON))

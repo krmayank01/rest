@@ -24,6 +24,7 @@ public class TeacherDto {
     @Size(min = 2, max = 50, message = "Subject must be between 2 and 50 characters")
     private String subject;
 
+    @NotNull(message = "Age is required")
     @Min(value = 22, message = "Age must be at least 22")
     @Max(value = 100, message = "Age must be less than 100")
     private Integer age;
