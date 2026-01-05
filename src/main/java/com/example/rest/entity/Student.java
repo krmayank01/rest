@@ -20,10 +20,10 @@ public class Student {
     @Column(name = "student_name", nullable = false)
     private String studentName;
 
-    @Column(name = "email")
+    @Column(name = "email", nullable = false, unique = true)
     private String email;
 
-    @Column(name = "age")
+    @Column(name = "age", nullable = false)
     private Integer age;
 }
 

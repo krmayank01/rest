@@ -20,12 +20,12 @@ public class Teacher {
     @Column(name = "teacher_name", nullable = false)
     private String teacherName;
 
-    @Column(name = "email")
+    @Column(name = "email", nullable = false, unique = true)
     private String email;
 
-    @Column(name = "subject")
+    @Column(name = "subject", nullable = false)
     private String subject;
 
-    @Column(name = "age")
+    @Column(name = "age", nullable = false)
     private Integer age;
 }
